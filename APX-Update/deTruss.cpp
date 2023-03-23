@@ -2323,7 +2323,7 @@ int expend(myG &obG, int iCurK, int iCurR, vector<int> &vSeed, int *piLB, int *p
     }
 
     *piLB = 0;
-    *piUB = MAX_R(obG.m_dAccu);
+    *piUB = MAX_R(obG.m_dAccu) + 1;
 
     while (!vWait.empty())
     {
